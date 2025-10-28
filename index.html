@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AllinBand - Pulsera inteligente para monitoreo continuo de signos vitales con detección temprana y respuesta automática a emergencias. Seguridad y autonomía para pacientes, tranquilidad para cuidadores."
+    />
+    <meta
+      name="keywords"
+      content="pulsera inteligente salud, monitoreo signos vitales, alerta automática emergencias, wearable adultos mayores, cuidado remoto familiar, detección temprana ML, geolocalización emergencias"
+    />
+    <meta name="author" content="Vivessence - AllinBand" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="AllinBand - Seguridad que te acompaña. Autonomía que te cuida."
+    />
+    <meta
+      property="og:description"
+      content="Monitoreo continuo 24/7 de signos vitales con respuesta automática ante emergencias."
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="AllinBand - Seguridad que te acompaña. Autonomía que te cuida."
+    />
+
+    <title>
+      AllinBand - Pulsera Inteligente para Monitoreo de Salud | Vivessence
+    </title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <!-- ========================================
+       NAVEGACIÓN
+       ======================================== -->
+    <nav class="navbar" role="navigation" aria-label="Navegación principal">
+      <div class="container navbar-container">
+        <a href="#" class="navbar-logo" aria-label="AllinBand - Inicio">
+          AllinBand
+        </a>
+
+        <button
+          class="navbar-toggle"
+          id="navToggle"
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <ul class="navbar-menu" id="navMenu">
+          <li>
+            <a href="#como-funciona" class="navbar-link">Cómo funciona</a>
+          </li>
+          <li><a href="#beneficios" class="navbar-link">Beneficios</a></li>
+          <li>
+            <a href="#caracteristicas" class="navbar-link">Características</a>
+          </li>
+          <li><a href="#faq" class="navbar-link">FAQ</a></li>
+          <li>
+            <a href="#contacto" class="btn btn-primary btn-sm"
+              >Únete al piloto</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ========================================
+       HERO SECTION (US12, US14)
+       Beneficio de autonomía y seguridad
+       Menos ansiedad del cuidado
+       ======================================== -->
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              Seguridad que te acompaña.<br />
+              <span class="text-primary">Autonomía que te cuida.</span>
+            </h1>
+            <p class="hero-subtitle">
+              Monitoreo continuo 24/7 de tus signos vitales con detección
+              temprana mediante Machine Learning y respuesta automática ante
+              emergencias. Vive con libertad, protegido siempre.
+            </p>
+
+            <div class="hero-cta">
+              <a href="#contacto" class="btn btn-primary btn-lg">
+                <span>Soy paciente</span>
+                <svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#beneficios-cuidadores" class="btn btn-outline btn-lg">
+                <span>Soy cuidador</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img
+              src="assets/images/wearable-hero.svg"
+              alt="Pulsera inteligente AllinBand monitoreando signos vitales"
+              width="500"
+              height="500"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+       CÓMO FUNCIONA (US13)
+       Funcionamiento sencillo
+       ======================================== -->
+    <section class="section-alt" id="como-funciona">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Simple y automático</span>
+          <h2 class="section-title">
+            Usa tu pulsera como siempre. Nosotros vigilamos por ti.
+          </h2>
+          <p class="section-subtitle">
+            Sin apps complicadas: la pulsera trabaja sola, 24/7. Detección
+            inteligente y ayuda inmediata cuando la necesitas.
+          </p>
+        </div>
+
+        <div class="how-it-works-steps">
+          <!-- Paso 1 -->
+          <div class="step reveal">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Monitorea</h3>
+            <p class="step-description">
+              La pulsera mide continuamente tu frecuencia cardíaca, saturación
+              de oxígeno y temperatura. Sin que tengas que hacer nada.
+            </p>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="step reveal">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Detecta</h3>
+            <p class="step-description">
+              Machine Learning analiza tus patrones personales y detecta
+              anomalías críticas antes de que se conviertan en emergencias.
+            </p>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="step reveal">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Activa ayuda</h3>
+            <p class="step-description">
+              Alerta en la pulsera, notificaciones a tu red de contactos con tus
+              datos y ubicación, y conexión automática con servicios de
+              emergencia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+       BENEFICIOS PARA PACIENTES (US12)
+       Beneficio de autonomía y seguridad
+       ======================================== -->
+    <section id="beneficios">
+      <div class="container">
+        <div class="benefits-intro">
+          <h2 class="section-title">
+            Vive con libertad, protegido en todo momento
+          </h2>
+          <p class="section-subtitle">
+            Diseñado para personas con condiciones de riesgo y adultos mayores
+            que buscan mantener su independencia sin comprometer su seguridad.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Beneficio 1 -->
+          <article class="card reveal">
+            <div class="card-icon card-icon--primary">🛡️</div>
+            <h3 class="card-title">Monitoreo pasivo 24/7</h3>
+            <p class="card-description">
+              La pulsera nunca descansa. Registra tus signos vitales de forma
+              continua y silenciosa, sin interrumpir tu día a día.
+            </p>
+          </article>
+
+          <!-- Beneficio 2 -->
+          <article class="card reveal">
+            <div class="card-icon card-icon--primary">🚨</div>
+            <h3 class="card-title">Alerta local inmediata</h3>
+            <p class="card-description">
+              Si algo va mal, tu pulsera te avisa con sonido y vibración. Tienes
+              el control para cancelar falsas alarmas.
+            </p>
+          </article>
+
+          <!-- Beneficio 3 -->
+          <article class="card reveal">
+            <div class="card-icon card-icon--primary">🤝</div>
+            <h3 class="card-title">Ayuda automática garantizada</h3>
+            <p class="card-description">
+              Aunque no puedas responder, el sistema contacta a tus familiares y
+              servicios de emergencia con tu ubicación exacta.
+            </p>
+          </article>
+
+          <!-- Beneficio 4 -->
+          <article class="card reveal">
+            <div class="card-icon card-icon--secondary">📊</div>
+            <h3 class="card-title">Historial para tu médico</h3>
+            <p class="card-description">
+              Accede a tus datos históricos desde la app. Comparte tendencias
+              con tu doctor para un seguimiento más preciso.
+            </p>
+          </article>
+
+          <!-- Beneficio 5 -->
+          <article class="card reveal">
+            <div class="card-icon card-icon--secondary">📍</div>
+            <h3 class="card-title">Centros de salud cercanos</h3>
+            <p class="card-description">
+              Encuentra rápidamente hospitales, clínicas y centros de atención
+              en tu área si necesitas acudir personalmente.
+            </p>
+          </article>
+
+          <!-- Beneficio 6 -->
+          <article class="card reveal">
+            <div class="card-icon card-icon--secondary">🧠</div>
+            <h3 class="card-title">Alertas personalizadas con IA</h3>
+            <p class="card-description">
+              El sistema aprende de ti. Los umbrales de alerta se ajustan a tus
+              patrones únicos, reduciendo falsas alarmas.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+       BENEFICIOS PARA CUIDADORES (US14, US15)
+       Menos ansiedad del cuidado
+       Herramientas de supervisión
+       ======================================== -->
+    <section class="section-alt" id="beneficios-cuidadores">
+      <div class="container">
+        <div class="benefits-intro">
+          <span class="badge badge--success">Para familiares y cuidadores</span>
+          <h2 class="section-title">
+            Tranquilidad con información en tiempo real
+          </h2>
+          <p class="section-subtitle">
+            Si algo pasa, te avisamos de inmediato con la información que
+            necesitas: señal vital y ubicación.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Beneficio Cuidador 1 -->
+          <article class="card reveal">
+            <div class="card-icon card-icon--secondary">📱</div>
+            <h3 class="card-title">Notificaciones automáticas</h3>
+            <p class="card-description">
+              Recibe alertas instantáneas cuando ocurre una emergencia. Sin
+              necesidad de estar llamando constantemente.
+            </p>
+          </article>
+
+          <!-- Beneficio Cuidador 2 -->
+          <article class="card reveal">
+            <div class="card-icon card-icon--secondary">💓</div>
+            <h3 class="card-title">Datos vitales en emergencias</h3>
+            <p class="card-description">
+              Visualiza signos vitales actuales, tipo de anomalía y última
+              ubicación conocida para tomar decisiones informadas.
+            </p>
+          </article>
+
+          <!-- Beneficio Cuidador 3 -->
+          <article class="card reveal">
+            <div class="card-icon card-icon--secondary">👥</div>
+            <h3 class="card-title">Red jerarquizada de contactos</h3>
+            <p class="card-description">
+              Si no acusas recibo de la alerta, el sistema escala
+              automáticamente al siguiente contacto. Nadie se queda sin ayuda.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+       CARACTERÍSTICAS DE LA APP (US15)
+       Herramientas de supervisión
+       ======================================== -->
+    <section id="caracteristicas">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            App completa para pacientes y cuidadores
+          </h2>
+          <p class="section-subtitle">
+            Consulta el historial cuando quieras y coordina mejor con el médico.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Característica 1 -->
+          <article class="card reveal">
+            <div class="card-icon card-icon--primary">⚡</div>
+            <h3 class="card-title">Panel en tiempo real</h3>
+            <p class="card-description">
+              Visualiza los signos vitales actuales del paciente. Actualización
+              continua para supervisión proactiva.
+            </p>
+          </article>
+
+          <!-- Característica 2 -->
+          <article class="card reveal">
+            <div class="card-icon card-icon--primary">📈</div>
+            <h3 class="card-title">Historial y tendencias</h3>
+            <p class="card-description">
+              Accede a registros históricos por períodos. Identifica patrones y
+              comparte reportes con profesionales de la salud.
+            </p>
+          </article>
+
+          <!-- Característica 3 -->
+          <article class="card reveal">
+            <div class="card-icon card-icon--primary">🗺️</div>
+            <h3 class="card-title">Geolocalización en emergencias</h3>
+            <p class="card-description">
+              En una alerta activa, ve la ubicación exacta del paciente y
+              encuentra centros de salud cercanos en el mapa.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+       TECNOLOGÍA Y PRIVACIDAD
+       ======================================== -->
+    <section class="section-primary">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            Tecnología avanzada con privacidad garantizada
+          </h2>
+          <p class="section-subtitle">
+            Cumplimos con los más altos estándares de seguridad y protección de
+            datos personales.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <article class="card">
+            <h3 class="card-title">🔐 Cifrado AES-256</h3>
+            <p class="card-description">
+              Tus datos de salud están protegidos con cifrado de nivel bancario
+              durante transmisión y almacenamiento.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">🔒 Autenticación segura</h3>
+            <p class="card-description">
+              Acceso mediante PIN o biometría. Solo tú y tus contactos
+              autorizados pueden ver la información.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">📲 Compatibilidad total</h3>
+            <p class="card-description">
+              Android 10+ e iOS 14+. Conectividad Bluetooth Low Energy (BLE) y
+              actualizaciones remotas (OTA).
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">🔋 Batería de 24 horas</h3>
+            <p class="card-description">
+              Autonomía de un día completo por carga. Notificaciones de batería
+              baja para que nunca te quedes sin protección.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">⚡ Latencia ≤ 5 segundos</h3>
+            <p class="card-description">
+              Desde la detección de una anomalía hasta la notificación a tus
+              contactos, en menos de 5 segundos.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">☁️ Disponibilidad 99.5%</h3>
+            <p class="card-description">
+              Infraestructura confiable con respaldo en la nube. Tus datos
+              siempre accesibles cuando los necesites.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+       FAQ (US13)
+       ======================================== -->
+    <section class="section-alt" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Preguntas frecuentes</h2>
+          <p class="section-subtitle">Resolvemos tus dudas sobre AllinBand</p>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>¿Qué pasa si la alerta es una falsa alarma?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  Cuando la pulsera detecta una anomalía, primero te alerta
+                  localmente con sonido y vibración. Tienes un tiempo de gracia
+                  para cancelar la alerta directamente desde la pulsera antes de
+                  que se notifique a tus contactos. Esto previene falsas alarmas
+                  y te da el control total.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>¿Necesito tener siempre el móvil cerca?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  No necesariamente. La pulsera almacena datos localmente y
+                  puede funcionar de forma autónoma. Sin embargo, para enviar
+                  notificaciones en tiempo real a tus contactos y servicios de
+                  emergencia, necesita conexión Bluetooth con tu smartphone o
+                  estar en rango de una red WiFi configurada.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>¿Cuánto dura la batería?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  La autonomía de AllinBand es de 24 horas de uso continuo con
+                  monitoreo activo. Recibirás notificaciones cuando la batería
+                  esté por debajo del 20% para que puedas cargarla. La carga
+                  completa toma aproximadamente 2 horas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>¿Es resistente al agua?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  Sí, AllinBand cuenta con certificación IPX7, lo que significa
+                  que es resistente a inmersión en agua hasta 1 metro de
+                  profundidad durante 30 minutos. Puedes lavarte las manos,
+                  ducharte o usarla bajo la lluvia sin problemas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span
+                >¿Cómo funciona la personalización con Machine Learning?</span
+              >
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  Durante las primeras semanas de uso, AllinBand recopila tus
+                  patrones únicos de signos vitales. Nuestro sistema de Machine
+                  Learning analiza estos datos y ajusta los umbrales de alerta
+                  específicamente para ti, reduciendo falsas alarmas y mejorando
+                  la precisión de detección de anomalías reales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>¿Puedo agregar múltiples contactos de emergencia?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  Sí, puedes configurar una red jerarquizada de hasta 5
+                  contactos de emergencia. Si el contacto primario no acusa
+                  recibo de la alerta en un tiempo determinado, el sistema
+                  escala automáticamente al siguiente contacto en la lista,
+                  garantizando que siempre haya respuesta.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+       CTA FINAL
+       ======================================== -->
+    <section class="cta-section" id="contacto">
+      <div class="container">
+        <h2 class="cta-title">Únete al piloto de AllinBand</h2>
+        <p class="text-lg text-gray mb-8">
+          Completa el formulario y nos pondremos en contacto contigo para
+          integrar AllinBand en tu día a día.
+        </p>
+
+        <form
+          class="cta-form"
+          id="contactForm"
+          aria-label="Formulario de contacto"
+        >
+          <div class="form-group">
+            <label for="name" class="form-label">Nombre completo *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-input"
+              required
+              aria-required="true"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Correo electrónico *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              required
+              aria-required="true"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="form-label">Teléfono</label>
+            <input type="tel" id="phone" name="phone" class="form-input" />
+          </div>
+
+          <div class="form-group">
+            <label for="role" class="form-label">Soy *</label>
+            <select
+              id="role"
+              name="role"
+              class="form-select"
+              required
+              aria-required="true"
+            >
+              <option value="">Selecciona una opción</option>
+              <option value="patient">Paciente</option>
+              <option value="caregiver">Cuidador/Familiar</option>
+              <option value="both">Ambos</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Mensaje (opcional)</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-textarea"
+              placeholder="Cuéntanos sobre tu situación o necesidades específicas"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg w-full">
+            Solicitar información
+          </button>
+
+          <p class="text-sm text-gray mt-4">
+            * Campos obligatorios. Tus datos están protegidos según nuestra
+            política de privacidad.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========================================
+       FOOTER
+       ======================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Columna 1: Sobre Vivessence -->
+          <div class="footer-section">
+            <h3>AllinBand</h3>
+            <p>
+              Una solución de <strong>Vivessence</strong> para transformar el
+              cuidado de la salud mediante tecnología wearable inteligente.
+            </p>
+          </div>
+
+          <!-- Columna 2: Enlaces -->
+          <div class="footer-section">
+            <h3>Enlaces</h3>
+            <nav class="footer-links" aria-label="Enlaces del pie de página">
+              <a href="#como-funciona" class="footer-link">Cómo funciona</a>
+              <a href="#beneficios" class="footer-link">Beneficios</a>
+              <a href="#caracteristicas" class="footer-link">Características</a>
+              <a href="#faq" class="footer-link">FAQ</a>
+              <a href="#contacto" class="footer-link">Contacto</a>
+            </nav>
+          </div>
+
+          <!-- Columna 3: Legal -->
+          <div class="footer-section">
+            <h3>Legal</h3>
+            <nav class="footer-links" aria-label="Enlaces legales">
+              <a href="#" class="footer-link">Política de Privacidad</a>
+              <a href="#" class="footer-link">Términos de Uso</a>
+              <a href="#" class="footer-link">Cookies</a>
+              <a href="#" class="footer-link">Contacto</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Vivessence - AllinBand. Todos los derechos reservados.
+            Proyecto académico.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
