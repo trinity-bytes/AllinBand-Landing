@@ -160,6 +160,9 @@
   width: 100%;
   height: auto;
   animation: float 3s ease-in-out infinite;
+  /* Filtro para eliminar fondo blanco sin sombras */
+  mix-blend-mode: multiply;
+  filter: contrast(1.05) brightness(1.15) saturate(1.1);
 }
 
 @keyframes float {

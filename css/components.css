@@ -111,6 +111,10 @@
   font-size: var(--text-3xl);
 }
 
+.card-icon i {
+  font-size: 32px;
+}
+
 .card-icon--primary {
   background-color: var(--color-primary-alpha);
   color: var(--color-primary);
@@ -126,6 +130,12 @@
   font-weight: var(--font-bold);
   margin-bottom: var(--space-3);
   color: var(--color-black);
+}
+
+.card-title i {
+  font-size: var(--text-2xl);
+  margin-right: var(--space-2);
+  vertical-align: middle;
 }
 
 .card-description {
@@ -240,6 +250,16 @@
 .section-primary h2,
 .section-primary h3 {
   color: var(--color-white);
+}
+
+.section-primary .section-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* No aplicar color blanco a las cards - mantener sus colores originales */
+.section-primary .card h3,
+.section-primary .card p {
+  color: initial;
 }
 
 /* ========================================
