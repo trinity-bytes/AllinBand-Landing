@@ -186,43 +186,39 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: 0;
+  overflow: hidden;
 }
 
 .heartbeat-line {
   width: 100%;
   height: 100%;
   color: var(--color-primary);
+  position: relative;
 }
 
-.heartbeat-fade-in {
-  position: absolute;
+.heartbeat-line svg {
   width: 100%;
   height: 100%;
-  top: 0;
-  right: 0;
-  background: linear-gradient(
-    135deg,
-    var(--color-primary-alpha) 0%,
-    var(--color-secondary-alpha) 100%
-  );
-  animation: heartbeatIn 2.5s linear infinite;
 }
 
-.heartbeat-fade-out {
+/* Efecto de revelado progresivo usando clip-path */
+.heartbeat-monitor::after {
+  content: "";
   position: absolute;
-  width: 120%;
-  height: 100%;
   top: 0;
-  left: -120%;
-  animation: heartbeatOut 2.5s linear infinite;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
     to right,
-    var(--color-primary-alpha) 0%,
-    var(--color-primary-alpha) 80%,
-    transparent 100%
+    transparent 0%,
+    transparent 20%,
+    rgba(255, 255, 255, 1) 100%
   );
+  animation: heartbeatReveal 2.5s ease-in-out infinite;
+  z-index: 1;
 }
 
 /* Asegurar que la imagen esté sobre la animación */
@@ -231,28 +227,13 @@
   z-index: 1;
 }
 
-/* Animaciones del heartbeat */
-@keyframes heartbeatIn {
+/* Animación de revelado del pulso */
+@keyframes heartbeatReveal {
   0% {
-    width: 100%;
-  }
-  50% {
-    width: 0;
+    transform: translateX(0);
   }
   100% {
-    width: 0;
-  }
-}
-
-@keyframes heartbeatOut {
-  0% {
-    left: -120%;
-  }
-  30% {
-    left: -120%;
-  }
-  100% {
-    left: 0;
+    transform: translateX(100%);
   }
 }
 
