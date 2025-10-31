@@ -267,11 +267,59 @@
    SECCIÓN "CÓMO FUNCIONA" (US13)
    ======================================== */
 
+.how-it-works-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-16);
+  align-items: center;
+  margin-top: var(--space-12);
+}
+
+@media (min-width: 992px) {
+  .how-it-works-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.how-it-works-image {
+  position: relative;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  order: 2; /* En móvil, la imagen va después de los pasos */
+}
+
+@media (min-width: 992px) {
+  .how-it-works-image {
+    order: 1; /* En desktop, la imagen va primero (izquierda) */
+  }
+}
+
+.how-it-works-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-xl);
+  transition: transform var(--transition-base);
+  /* Screen elimina fondos negros */
+  /*mix-blend-mode: screen; */
+}
+
+.how-it-works-image img:hover {
+  transform: scale(1.02);
+}
+
 .how-it-works-steps {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-12);
-  margin-top: var(--space-12);
+  order: 1; /* En móvil, los pasos van primero */
+}
+
+@media (min-width: 992px) {
+  .how-it-works-steps {
+    order: 2; /* En desktop, los pasos van después (derecha) */
+  }
 }
 
 @media (min-width: 768px) {
