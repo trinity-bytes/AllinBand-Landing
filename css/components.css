@@ -43,13 +43,38 @@
 }
 
 .btn-secondary {
-  background-color: var(--color-secondary);
+  background-color: var(--color-cyan);
   color: var(--color-white);
 }
 
 .btn-secondary:hover {
-  background-color: var(--color-secondary-dark);
+  background-color: var(--color-cyan-dark);
   color: var(--color-white); /* Mantener texto blanco en hover */
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-violet {
+  background: var(--color-violet);
+  color: var(--color-white);
+}
+
+.btn-violet:hover {
+  background: var(--color-violet-dark);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-gradient {
+  background: var(--gradient-primary);
+  color: var(--color-white);
+  border: none;
+}
+
+.btn-gradient:hover {
+  background: var(--gradient-accent);
+  color: var(--color-white);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -127,6 +152,21 @@
   color: var(--color-secondary);
 }
 
+.card-icon--cyan {
+  background-color: var(--color-cyan-alpha);
+  color: var(--color-cyan);
+}
+
+.card-icon--violet {
+  background-color: var(--color-violet-alpha);
+  color: var(--color-violet);
+}
+
+.card-icon--gradient {
+  background: var(--gradient-accent);
+  color: var(--color-white);
+}
+
 .card-title {
   font-size: var(--text-xl);
   font-weight: var(--font-bold);
@@ -164,6 +204,16 @@
 .badge--success {
   background-color: var(--color-secondary-alpha);
   color: var(--color-secondary);
+}
+
+.badge--cyan {
+  background-color: var(--color-cyan-alpha);
+  color: var(--color-cyan-dark);
+}
+
+.badge--violet {
+  background-color: var(--color-violet-alpha);
+  color: var(--color-violet-dark);
 }
 
 /* ========================================

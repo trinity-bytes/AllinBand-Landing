@@ -7,23 +7,38 @@
 
 :root {
   /* ========================================
-     COLORES PRINCIPALES
+     COLORES PRINCIPALES - Paleta Análoga Mejorada
      ======================================== */
 
-  /* Colores de Marca */
+  /* Colores de Marca - Azul Principal */
   --color-primary: #2563eb; /* Azul confianza - Principal */
-  --color-primary-light: #3b82f6; /* Azul claro - Hover */
+  --color-primary-light: #60a5fa; /* Azul claro - Hover */
   --color-primary-dark: #1e40af; /* Azul oscuro - Activo */
   --color-primary-alpha: rgba(37, 99, 235, 0.1); /* Con transparencia */
 
+  /* Colores Análogos - Celeste/Cyan */
+  --color-cyan: #06b6d4; /* Celeste vibrante - Secundario */
+  --color-cyan-light: #22d3ee; /* Celeste claro */
+  --color-cyan-dark: #0891b2; /* Celeste oscuro */
+  --color-cyan-alpha: rgba(6, 182, 212, 0.1);
+
+  /* Colores Análogos - Morado/Violeta */
+  --color-violet: #8b5cf6; /* Violeta - Acentos */
+  --color-violet-light: #a78bfa; /* Violeta claro */
+  --color-violet-dark: #7c3aed; /* Violeta oscuro */
+  --color-violet-alpha: rgba(139, 92, 246, 0.1);
+
+  /* Color Secundario - Verde (mantenido para éxito) */
   --color-secondary: #10b981; /* Verde seguridad - Secundario */
   --color-secondary-light: #34d399;
   --color-secondary-dark: #059669;
   --color-secondary-alpha: rgba(16, 185, 129, 0.1);
 
-  --color-accent: #f97316; /* Naranja alerta - Acentos */
-  --color-accent-light: #fb923c;
-  --color-accent-dark: #ea580c;
+  /* Color de Acento - Degradado entre Cyan y Violeta */
+  --color-accent: #06b6d4; /* Celeste como acento principal */
+  --color-accent-light: #22d3ee;
+  --color-accent-dark: #0891b2;
+  --color-accent-secondary: #8b5cf6; /* Violeta como acento secundario */
 
   /* Colores Neutros */
   --color-white: #ffffff;
@@ -43,7 +58,25 @@
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
-  --color-info: #3b82f6;
+  --color-info: #06b6d4; /* Celeste para información */
+
+  /* Gradientes de Colores Análogos */
+  --gradient-primary: linear-gradient(
+    135deg,
+    #2563eb 0%,
+    #06b6d4 100%
+  ); /* Azul a Celeste */
+  --gradient-accent: linear-gradient(
+    135deg,
+    #06b6d4 0%,
+    #8b5cf6 100%
+  ); /* Celeste a Violeta */
+  --gradient-vibrant: linear-gradient(
+    135deg,
+    #8b5cf6 0%,
+    #2563eb 50%,
+    #06b6d4 100%
+  ); /* Violeta-Azul-Celeste */
 
   /* ========================================
      TIPOGRAFÍA

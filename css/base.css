@@ -122,3 +122,40 @@ section {
   background-color: var(--color-primary-alpha);
   color: var(--color-primary-dark);
 }
+
+/* ========================================
+   SCROLLBAR PERSONALIZADA
+   ======================================== */
+
+/* Para navegadores WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-100);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-primary);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-gray-100);
+  transition: background var(--transition-base);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gradient-accent);
+  box-shadow: 0 0 8px rgba(6, 182, 212, 0.4);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--gradient-vibrant);
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-cyan) var(--color-gray-100);
+}

@@ -79,6 +79,55 @@
   });
 
   // ========================================
+  // NAVBAR ACTIVE SECTION INDICATOR
+  // ========================================
+  const indicator = document.querySelector(".navbar-indicator");
+  const navLinks = document.querySelectorAll(".navbar-link[data-section]");
+  const sections = document.querySelectorAll("section[id]");
+
+  function updateIndicator() {
+    let currentSection = "";
+    const scrollPos = window.scrollY + 200;
+
+    // Detectar sección actual
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+
+      if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    // Actualizar línea indicadora
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+
+      if (link.getAttribute("data-section") === currentSection) {
+        link.classList.add("active");
+
+        // Posicionar la línea
+        const linkRect = link.getBoundingClientRect();
+        const menuRect = link.closest(".navbar-menu").getBoundingClientRect();
+
+        indicator.style.width = linkRect.width + "px";
+        indicator.style.left = linkRect.left - menuRect.left + "px";
+        indicator.classList.add("visible");
+      }
+    });
+
+    // Ocultar si no hay sección activa
+    if (!currentSection) {
+      indicator.classList.remove("visible");
+    }
+  }
+
+  // Ejecutar en scroll, load y resize
+  window.addEventListener("scroll", updateIndicator);
+  window.addEventListener("load", updateIndicator);
+  window.addEventListener("resize", updateIndicator);
+
+  // ========================================
   // FAQ ACCORDION
   // ========================================
   const faqItems = document.querySelectorAll(".faq-item");
