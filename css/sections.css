@@ -47,16 +47,12 @@
 .navbar-logo-icon {
   height: 40px;
   width: auto;
-  /* Filtro para convertir el icono al color primario (azul) */
-  filter: brightness(0) saturate(100%) invert(35%) sepia(93%) saturate(2570%)
-    hue-rotate(212deg) brightness(93%) contrast(92%);
+  /* Filtro eliminado para mostrar colores originales */
   transition: filter var(--transition-base);
 }
 
 .navbar-logo:hover .navbar-logo-icon {
-  /* Efecto hover con color celeste sincronizado con el texto */
-  filter: brightness(0) saturate(100%) invert(52%) sepia(73%) saturate(2297%)
-    hue-rotate(166deg) brightness(95%) contrast(96%);
+  /* Efecto hover eliminado */
 }
 
 .navbar-menu {
