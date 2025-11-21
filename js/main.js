@@ -157,22 +157,22 @@
   // ========================================
   // BACK TO TOP
   // ========================================
-  
-  const backToTopButton = document.getElementById('backToTop');
-  
+
+  const backToTopButton = document.getElementById("backToTop");
+
   if (backToTopButton) {
-    window.addEventListener('scroll', function() {
+    window.addEventListener("scroll", function () {
       if (window.pageYOffset > 300) {
-        backToTopButton.style.display = 'inline-flex';
+        backToTopButton.style.display = "inline-flex";
       } else {
-        backToTopButton.style.display = 'none';
+        backToTopButton.style.display = "none";
       }
     });
 
-    backToTopButton.addEventListener('click', function() {
+    backToTopButton.addEventListener("click", function () {
       window.scrollTo({
         top: 0,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     });
   }
