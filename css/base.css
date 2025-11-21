@@ -74,7 +74,8 @@ a:hover {
   color: var(--color-primary-dark);
 }
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }

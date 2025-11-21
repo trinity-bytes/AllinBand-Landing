@@ -155,20 +155,17 @@
   });
 
   // ========================================
-  // BACK TO TOP (OPCIONAL)
+  // BACK TO TOP
   // ========================================
-  // Puedes agregar un botón de "volver arriba" si lo deseas
-  // Descomenta este código si agregas un botón con id="backToTop"
-
-  /*
+  
   const backToTopButton = document.getElementById('backToTop');
   
   if (backToTopButton) {
     window.addEventListener('scroll', function() {
       if (window.pageYOffset > 300) {
-        backToTopButton.classList.add('visible');
+        backToTopButton.style.display = 'inline-flex';
       } else {
-        backToTopButton.classList.remove('visible');
+        backToTopButton.style.display = 'none';
       }
     });
 
@@ -179,7 +176,6 @@
       });
     });
   }
-  */
 
   // ========================================
   // CONSOLE LOG (DESARROLLO)

@@ -50,6 +50,8 @@
   // PARALLAX EFFECT (OPCIONAL - HERO IMAGE)
   // ========================================
 
+  // Comentado para evitar conflicto con animación CSS 'float'
+  /*
   const heroImage = document.querySelector(".hero-image img");
 
   if (heroImage) {
@@ -70,6 +72,7 @@
       }
     });
   }
+  */
 
   // ========================================
   // COUNTER ANIMATION (OPCIONAL)
